@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Clang Format</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="loading" class="text-center">
+        <img src="logo.png" alt="Web Clang-Format">
+        <p>
+            Loading...
+        </p>
+    </div>
+    <div id="main">
+        <img src="logo.png" alt="Web Clang-Format" class="logo">
+        <span class="intro">Run clang-format in the browser, offline, using WASM.</span>
+        <div class="row">
+            <div class="column">
+                <h3>Code
+                </h3>
+                <textarea id="sourceTextArea" placeholder="Enter your C/C++ code here" spellcheck="false"></textarea>
+            </div>
+            <div class="column">
+                <h3>Formatted code</h3>
+                <textarea id="formattedTextArea" placeholder="Formatted code will appear here"
+                    spellcheck="false"></textarea>
+            </div>
+        </div>
+        <div class="text-center">
+            <button id="formatBtn" class="green">Format</button>
+            <button id="copyBtn">Copy Output</button>
+            <button id="resetConfiguration">Reset Configuration</button>
+        </div>
+
+        <h3>Configuration (JSON)
+            <a href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html" target="_blank">Reference</a>
+
+        </h3>
+        <textarea name="" id="settingsTextArea" placeholder="JSON settings for clang-format"
+            spellcheck="false"></textarea>
+
+        <p class="credits">
+            Web interface by
+            <a href="https://github.com/agrawal-d">@agrawal-d</a>
+            powered by <a href="https: //www.npmjs.com/package/@wasm-fmt/clang-format">@wasm-fmt/clang-format</a>
+            logo by <a href="https://cooltext.com/">CoolText</a></a>
+        </p>
+
+    </div>
+
+    <script src="bundled/index.js"></script>
+</body>
+
+</html>

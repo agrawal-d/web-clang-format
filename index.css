@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  background-color: #f0f0f0;
+  color: #4e4e4e;
+}
+
+#loading {
+  display: block;
+  margin-top: 20vh;
+}
+
+#main {
+  display: none;
+}
+
+.logo {
+  width: 300px;
+  vertical-align: middle;
+}
+
+.intro {
+  vertical-align: middle;
+  margin-left: 10px;
+  font-style: italic;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+  padding-top: 0px;
+}
+
+button,
+textarea {
+  border-radius: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  font-weight: 500;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  margin: 20px 0px;
+  margin-top: 5px;
+  border: 1px solid #dfdfdf;
+  height: 60vh;
+  outline: none;
+  padding: 5px;
+  font-family: Consolas, "Ubuntu Mono", "Courier New", Courier, monospace;
+  resize: none;
+}
+
+#settingsTextArea {
+  height: 15vh;
+}
+
+button {
+  padding: 10px 25px;
+  margin: 0px 2px;
+  border: 0px;
+  outline: none;
+  background-color: #dfdfdf;
+}
+
+button.green {
+  background-color: #2db55d;
+  color: white;
+}
+
+button.green:hover {
+  background-color: #2aaf58;
+}
+
+button.green:active {
+  background-color: #279f4e;
+}
+
+button:hover {
+  background-color: #d1d1d1;
+}
+
+button:active {
+  background-color: #a5a5a5;
+}
+
+textarea:focus,
+button:focus {
+  box-shadow: 0px 0px 0px 5px rgba(0, 123, 255, 1);
+}
+
+.credits {
+  color: #8e8e8e !important;
+}
